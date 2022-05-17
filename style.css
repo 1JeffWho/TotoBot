@@ -1,0 +1,98 @@
+body
+{
+    color: white;
+    background-color: #1a1a1c;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+h1 {
+    font-size: 2em;
+    /* font-size: 120%; */
+}
+
+h2 {
+    font-size: 1.5em;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    color: white;
+}
+
+.header7 {
+    color: #FF0000;
+    border-bottom: dotted 3px #ff0000;
+}
+
+
+.box {
+    border-style: dotted dashed solid double;
+    border-width: 5px 20px;
+    border-color: #DDB74D;
+    background-color: #D36821;
+    color: #6C3611;
+    width: 500px;
+    height: 250px;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: "=> ";
+}
+ul ul{
+    list-style-type: disc;
+}
+ul ul ul {
+    list-style-type: "> ";
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+ol ol {
+    list-style-type: lower-roman;
+}
+nav * {
+    margin: 0;
+    text-align: left;
+}
+nav ul {
+    list-style-type: none;
+    text-align: right;
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    font-style: normal;
+    text-decoration: underline;
+    border: outset 5px;
+    color: grey;
+    border-radius: 1em;
+    padding: 0 5px 0 5px;
+
+}
+nav a:hover {
+    font-style: italic;
+    color: rgb(200, 200, 200);
+}
+nav a:active {
+    color: white;
+    border-radius: 1em;
+    padding: 0 5px 0 5px;
+    
+}
+
+figure {
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer {
+    margin-top: 90%;
+}
+
+header {
+    margin-top: 10%;
+}
