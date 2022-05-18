@@ -1,7 +1,7 @@
 body
 {
     color: white;
-    background-color: #1a1a1c;
+    background-image: linear-gradient(135deg, #646869 0%, #2e2e32 100%);
     font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -17,49 +17,13 @@ h2 {
     color: white;
 }
 
-.header7 {
-    color: #FF0000;
-    border-bottom: dotted 3px #ff0000;
-}
-
-
-.box {
-    border-style: dotted dashed solid double;
-    border-width: 5px 20px;
-    border-color: #DDB74D;
-    background-color: #D36821;
-    color: #6C3611;
-    width: 500px;
-    height: 250px;
-    margin: 10px auto;
-    padding: 10px;
-    text-align: justify;
-}
-
-ul {
-    list-style-type: "=> ";
-}
-ul ul{
-    list-style-type: disc;
-}
-ul ul ul {
-    list-style-type: "> ";
-}
-
-ol {
-    list-style-type: upper-roman;
-}
-
-ol ol {
-    list-style-type: lower-roman;
-}
+/*Navigation*/
 nav * {
-    margin: 10px;
-    text-align: left;
+    text-align: center;
 }
 nav ul {
     list-style-type: none;
-    text-align: right;
+    text-align: center;
 }
 nav li {
     display: inline-block;
@@ -68,9 +32,11 @@ nav a {
     font-style: normal;
     text-decoration: underline;
     border: outset 5px;
-    color: grey;
+    color: rgb(86, 86, 86);
+    background-color: rgb(206, 206, 241);
     border-radius: 1em;
-    padding: 0 5px 0 5px;
+    padding: 0 20px 0 20px;
+    margin-left: 10%;
 
 }
 nav a:hover {
@@ -80,8 +46,7 @@ nav a:hover {
 nav a:active {
     color: white;
     border-radius: 1em;
-    padding: 0 5px 0 5px;
-    
+    padding: 0 21px 0 21px;    
 }
 
 figure {
@@ -90,9 +55,20 @@ figure {
 }
 
 footer {
-    margin-top: 90%;
+    background-color: #1a1a1c;
+    padding: 5px;
+    border-radius:20% 20% 0% 0%;
+    margin-top: 100px;
+    margin-left: -8px;
+    margin-bottom: -10px;
+    margin-right: -8px;
 }
 
-header {
-    margin-top: 10%;
-}
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+    margin: -7px:
+  }
