@@ -77,3 +77,23 @@ footer {
     font-size: 30px;
     margin: -7px;
   }
+
+div {
+    width:24px;
+    height:24px;
+    position:relative;
+    -webkit-animation:glide 2s ease-in-out alternate infinite;
+}
+
+@-webkit-keyframes glide  {
+from {
+    left:0px;
+    top:0px;
+}
+
+to {
+    left:0px;
+    top:20px;
+}
+
+}
