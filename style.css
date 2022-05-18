@@ -4,7 +4,6 @@ body
     background-image: linear-gradient(135deg, #646869 0%, #2e2e32 100%);
     font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 h1 {
     font-size: 2em;
@@ -19,7 +18,14 @@ h2 {
 
 /*Navigation*/
 nav * {
-    text-align: center;
+    text-decoration: none;
+    text-align: left;
+    background-color: #1a1a1c;
+    padding: 20px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -10px;
+    border-radius:0% 0% 20% 20%;
 }
 nav ul {
     list-style-type: none;
@@ -30,23 +36,22 @@ nav li {
 }
 nav a {
     font-style: normal;
-    text-decoration: underline;
     border: outset 5px;
     color: rgb(86, 86, 86);
-    background-color: rgb(206, 206, 241);
+    background-color: rgb(255, 255, 255);
     border-radius: 1em;
     padding: 0 20px 0 20px;
-    margin-left: 10%;
 
 }
 nav a:hover {
     font-style: italic;
-    color: rgb(200, 200, 200);
+    color: rgb(45, 45, 45);
 }
 nav a:active {
-    color: white;
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
     border-radius: 1em;
-    padding: 0 21px 0 21px;    
+    padding: 0 20px 0 20px;    
 }
 
 figure {
@@ -70,5 +75,5 @@ footer {
     background: #1abc9c;
     color: white;
     font-size: 30px;
-    margin: -7px:
+    margin: -7px;
   }
