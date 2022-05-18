@@ -54,7 +54,7 @@ ol ol {
     list-style-type: lower-roman;
 }
 nav * {
-    margin: 0;
+    margin: 10px;
     text-align: left;
 }
 nav ul {
