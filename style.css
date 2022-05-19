@@ -78,9 +78,7 @@ footer {
     margin: -7px;
   }
 
-div {
-    width:24px;
-    height:500px;
+animation {
     position:relative;
     -webkit-animation:glide 2s ease-in-out alternate infinite;
 
@@ -98,6 +96,13 @@ to {
 }
 
 }
+
+div {
+  color: black;
+  border: 10px solid rgb(111, 111, 111);
+  background-color: rgb(200,200,200);
+}
+
 
 table {
     border-collapse: collapse;
