@@ -18,45 +18,42 @@ h2 {
 
 /*Navigation*/
 nav * {
-    text-decoration: none;
-    text-align: left;
-    background-color: #1a1a1c;
-    padding: 18px 18px 10px 18px;
-    margin-left: -8px;
-    margin-right: -8px;
-    margin-top: -10px;
-    border-radius:0% 0% 20% 20%;
+  text-decoration: none;
+  text-align: left;
+  background-color: #1a1a1c;
+  padding: 18px 18px 10px 18px;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-top: -10px;
+  border-radius:0% 0% 20% 20%;
 }
-nav ul {
-    list-style-type: none;
-    text-align: center;
+ul {
+  list-style-type: none;
+  text-align: center;
 }
-nav li {
-    display: inline-block;
+li {
+  display: inline-block;
 }
-nav a {
-    font-style: normal;
-    border: outset 5px;
-    color: rgb(86, 86, 86);
-    background-color: rgb(255, 255, 255);
-    border-radius: 1em;
-    padding: 0 20px 0 20px;
+li a {
+  font-style: underline;
+  border: outset 5px;
+  color: rgb(86, 86, 86);
+  background-color: rgb(255, 255, 255);
+  border-radius: 1em;
+  padding: 0 20px 0 20px;
 
 }
-nav a:hover {
-    font-style: italic;
-    color: rgb(45, 45, 45);
+li a:hover {
+  font-style: underline;
+  color: rgb(0, 0, 0);
 }
-nav a:active {
-    text-decoration: underline;
-    color: rgb(0, 0, 0);
-    border-radius: 1em;
-    padding: 0 20px 0 20px;    
+.active {
+  background-color: rgb(202, 202, 202);
 }
 
 figure {
-    display: inline-block;
-    vertical-align: top;
+  display: inline-block;
+  vertical-align: top;
 }
 
 footer {
