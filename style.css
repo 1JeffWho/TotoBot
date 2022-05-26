@@ -16,10 +16,15 @@ h2 {
     color: white;
 }
 
+he {
+  text-align: center;
+  text-shadow: 2px 2px #868686;
+  font-size: 2em;
+}
+
 /*Navigation*/
 nav * {
   text-decoration: none;
-  text-align: left;
   background-color: #1a1a1c;
   padding: 18px 18px 10px 18px;
   margin-left: -8px;
