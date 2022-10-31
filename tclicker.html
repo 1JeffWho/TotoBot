@@ -16,16 +16,112 @@
                   <li><a href="news.html">News</a></li>
                   <li><a href="commands.html">Commands</a></li>
                   <li><a class="active" href="tclicker.html">T-Clicker</a></li>
-                  <li><a href="game.html">Game</a></li>
                 </ul>
               </nav>
         </header>
-        <body><center>
-            <div class="box", style="width:fit-content">
+        <body>
+            <center>
+            <div class="clicker">
                 <label id="counter">0</label><br>
-                    <button id="click">T</button><br>
-                    <script src="index.js"></script>
-            </div></center>
+                    <button id="click">T</button><br><br>
+
+                <button id="twotimes">Buy x2</button><br>
+                Kosten: <label id="twotimes_cost">100</label> T<br><br>
+                <button id="auto">Automatic x3</button><br>
+                Kosten: <label id="automatic_cost">500</label> T<br><br><br>
+
+                Stats: <br>Clickfactor | 
+                <label id="clickfactor">1</label> T
+                <br>Autofactor | 
+                <label id="autofactor">0.1</label> T/s
+
+                    <!-- <br>
+                    <label>Name:</label>
+                    <input type="text" id="name" name="" maxlength="16"><br>
+                    <p id="demo"></p>     -->
+
+                <!-- <h2>Leaderboard:</h2>
+                1. <label id="first">User</label>:
+                <label id="leaderboard1"></label><br>
+                2. <label id="second">User</label>:
+                <label id="leaderboard2"></label><br>
+                3. <label id="third">User</label>:
+                <label id="leaderboard3"></label><br>
+                4. <label id="fourth">User</label>:
+                <label id="leaderboard4"></label><br>
+                5. <label id="fifth">User</label>:
+                <label id="leaderboard5"></label><br></center> -->
+            </div>
+        </div>
+
+        <script>
+        clickcount = 0;
+        factor = 1;
+        costs = [100, 250, 500, 1000, 2500, 5000, 10000, 100000, 1000000, 1000000000];
+        auto_costs = [500, 1000, 2500, 5000, 10000, 100000, 1000000, 1000000000];
+        auto_factor = 0.1;
+
+            document.getElementById("click").onclick = function(){
+                clickcount+=factor;
+                document.getElementById("counter").innerHTML = clickcount.toFixed(1); 
+            }         
+
+            document.getElementById("twotimes").onclick = function(){
+                if (clickcount >= costs[0]){
+                    factor = factor * 2;
+                    clickcount = clickcount - costs[0];
+                    costs.shift(0);
+                    document.getElementById("counter").innerHTML = clickcount.toFixed(1); 
+                    document.getElementById("twotimes_cost").innerHTML = costs[0];
+                    document.getElementById("clickfactor").innerHTML = factor;
+
+                }
+                else if (clickcount < costs[0]) {
+                    alert("You don't have enough T-Points.\nYou need " + (costs[0]) + "!");
+                }
+
+                // document.getElementById("twotimes_cost").innerHTML = costs[upgrades_times];
+            }
+
+            document.getElementById("auto").onclick = function(){
+                if (clickcount >= auto_costs[0]){
+                    clickcount = clickcount - auto_costs[0];
+                    auto_costs.shift(0);
+                    if (auto_factor == 0.1){
+                        auto_factor = 1;
+                    }
+                    else{
+                        auto_factor *= 3;
+                    }
+                    document.getElementById("automatic_cost").innerHTML = auto_costs[0];
+                    document.getElementById("counter").innerHTML = clickcount.toFixed(1); 
+                    document.getElementById("autofactor").innerHTML = auto_factor;
+                }
+                else if (clickcount < auto_costs[0]) {
+                    alert("You don't have enough T-Points.\nYou need " + (auto_costs[0]) + "!");
+                }                 
+            }
+
+            var intervalId = window.setInterval(function(){
+            // call your function here
+                clickcount += (1*auto_factor);
+                document.getElementById("counter").innerHTML = clickcount.toFixed(1); 
+            // gold bonus
+                random_number = Math.floor(Math.random() * 77);
+                if (random_number == 7){
+                    clickcount += (factor*factor*7+auto_factor*auto_factor*7);
+                    document.getElementById("click").innerHTML = "Ⓣ";
+                    document.getElementById("click").style.color = "gold";                    
+                }
+                else {
+                    document.getElementById("click").innerHTML = "T";
+                    document.getElementById("click").style.color = "black";
+
+                }
+            }, 1000);
+        
+        </script>
+
         </body>
         
         <footer>
