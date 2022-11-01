@@ -16,7 +16,7 @@ let y_enemy = 600;
 let x_enemy = 1000;
 var gameActive = true;
 var coin_area = 25;
-var enemy_speed = 2;
+let enemy_speed = 2;
 
 function update(){
     if (gameActive == true){
@@ -67,8 +67,9 @@ function update(){
                     y_coin = Math.floor(Math.random() * 550);
                     document.getElementById("balance").innerHTML = bal;
                     document.getElementById("scoreh1").innerHTML = score;
-                    enemy_speed += 0.02;
-                    document.getElementById("enemyspeed").innerHTML = enemy_speed;
+                    enemy_speed += 0.022;
+                    var rounded = Math.round((enemy_speed + Number.EPSILON) * 100) / 100;
+                    document.getElementById("enemyspeed").innerHTML = rounded
                 }     
             }     
         }
@@ -80,8 +81,9 @@ function update(){
                 y_coin = Math.floor(Math.random() * 550);
                 document.getElementById("balance").innerHTML = bal;
                 document.getElementById("scoreh1").innerHTML = score;
-                enemy_speed += 0.02;
-                document.getElementById("enemyspeed").innerHTML = enemy_speed;
+                enemy_speed += 0.022;
+                var rounded = Math.round((enemy_speed + Number.EPSILON) * 100) / 100;
+                document.getElementById("enemyspeed").innerHTML = rounded
             }
         }
     
