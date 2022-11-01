@@ -10,6 +10,7 @@ document.getElementById("faster").onclick = function(){
         vy_value += 2.5;
         vy_minus_value -= 2.5;
         bal -= 100;
+        document.getElementById("speed").innerHTML = vxr_value;
         document.getElementById("balance").innerHTML = bal;
     }
     }

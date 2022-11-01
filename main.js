@@ -67,7 +67,8 @@ function update(){
                     y_coin = Math.floor(Math.random() * 550);
                     document.getElementById("balance").innerHTML = bal;
                     document.getElementById("scoreh1").innerHTML = score;
-                    enemy_speed += 0.025;
+                    enemy_speed += 0.02;
+                    document.getElementById("enemyspeed").innerHTML = enemy_speed;
                 }     
             }     
         }
@@ -79,7 +80,8 @@ function update(){
                 y_coin = Math.floor(Math.random() * 550);
                 document.getElementById("balance").innerHTML = bal;
                 document.getElementById("scoreh1").innerHTML = score;
-                enemy_speed += 0.025;
+                enemy_speed += 0.02;
+                document.getElementById("enemyspeed").innerHTML = enemy_speed;
             }
         }
     
