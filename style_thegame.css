@@ -72,13 +72,14 @@ h3{
 
 /* Keys */
 #w {
-    width: 17vh;
-    height: 17vh;
-    font-size: 200%;    
+    width: 14vh;
+    height: 14vh;
+    font-size: 500%;    
 }
 
 #a,#d,#s {
-    width: 17vh;
-    height: 17vh;
-    font-size: 200%; 
+    width: 14vh;
+    height: 14vh;
+    font-size: 500%;
+     
 }
