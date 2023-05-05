@@ -3,6 +3,10 @@ console.log("Main.js loaded")
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
+// Load coin image
+const coinImg = new Image();
+coinImg.src = "coin.png";
+
 let x = 0;
 let y = 2;
 let vxl = 0;
@@ -25,13 +29,8 @@ function update(){
         x += vxr;
     
         // coin
-        ctx.fillStyle = "gold";
-        ctx.beginPath();
-    
-        ctx.arc(x_coin, y_coin, coin_area, 0, 2 * Math.PI);
-    
-        ctx.stroke();
-        ctx.fill();
+        ctx.drawImage(coinImg, x_coin - coin_area, y_coin - coin_area, coin_area*2, coin_area*2);
+
     
         // coin border
         if (x_coin < 50){

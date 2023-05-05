@@ -29,3 +29,4 @@ addEventListener("keyup", function(e){
     if (e.code == "KeyS") vy = 0;
     if (e.code == "KeyW") vy = 0;
 })
+
