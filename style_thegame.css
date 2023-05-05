@@ -68,3 +68,17 @@ h3{
     font-family: Arial, Helvetica, sans-serif;  
     box-shadow: 0px 2px 5px 0px rgba(68, 68, 68, 0.592);
   }
+
+
+/* Keys */
+#w {
+    width: 17vh;
+    height: 17vh;
+    font-size: 200%;    
+}
+
+#a,#d,#s {
+    width: 17vh;
+    height: 17vh;
+    font-size: 200%; 
+}
